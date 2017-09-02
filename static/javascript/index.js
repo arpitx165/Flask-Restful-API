@@ -23,6 +23,12 @@
 
 
 $scope.repos = []
+
+$scope.goBack = function(){
+  $scope.tech_repos=true
+  $scope.user_profile=true
+  $scope.tech_name= false;
+}
  $scope.showList = function (b) {
   console.log(b);
   $http.get('repo/'+ encodeURIComponent(b)).then((res)=>{
@@ -43,11 +49,7 @@ $scope.repos = []
     $scope.user_profile=false
   })
 }
-
-
-
-
-  }
+}
 
   ]);
 

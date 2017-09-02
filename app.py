@@ -9,8 +9,8 @@ app = Flask(__name__,template_folder='templates')
 
 config = json.loads(open('config.json').read())
 app.config["MONGO_DBNAME"] = config["configuration"]["DB_Name"]
-if config["configuration"]["DB_URI"]:
-    app.config["MONGO_URI"]=config["configuration"]["DB_URI"]
+#if config["configuration"]["DB_URI"]:
+#    app.config["MONGO_URI"]=config["configuration"]["DB_URI"]
 collection_name=config["configuration"]["DB_COLLECTION_NAME"]
 mongo = PyMongo(app)
 
