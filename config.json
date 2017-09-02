@@ -1,0 +1,8 @@
+{
+  "configuration":{
+    "DB_Name":"cast",
+    "DB_URI":"mongodb://arpit:arpit@ds119044.mlab.com:19044/cast",
+    "DB_COLLECTION_NAME":"repos",
+    "Debug_Option":true
+  }
+}
