@@ -68,4 +68,7 @@ api.add_resource(User, "/user/<string:user_name>", endpoint="User")
 
 
 if __name__ == "__main__":
-    app.run(debug=config["configuration"]["Debug_Option"])
+    app.run(
+        host='0.0.0.0',
+        debug=config["configuration"]["Debug_Option"]
+    )

@@ -1,0 +1,6 @@
+flask-api:
+  build: .
+  volumes:
+    - .:/opt/
+  ports:
+    - 5000:5000
